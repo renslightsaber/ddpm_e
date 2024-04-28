@@ -1,5 +1,7 @@
 # ddpm_e
-This repository is [`DDPM` (Denoising Diffusion Probabilistic Models)](https://arxiv.org/abs/2006.11239) 🔥Pytorch Code Implementation mainly based on [`awjuliani/pytorch-diffusion`](https://github.com/awjuliani/pytorch-diffusion). `awjuliani`'s DDPM code is easily understandable and written on ⚡ Lightning, and I re-write his DDPM code into 🔥 Pytorch code. I know that his code is better, and this repository is just for my research and study. Additionally I added some codes for faster or more efficient training:    
+This repository is [`DDPM` (Denoising Diffusion Probabilistic Models)](https://arxiv.org/abs/2006.11239) 🔥Pytorch Code Implementation mainly based on [`awjuliani/pytorch-diffusion`](https://github.com/awjuliani/pytorch-diffusion). `awjuliani`'s DDPM code is easily understandable and written on ⚡ Lightning, and I re-write his DDPM code into 🔥 Pytorch code. I know that his code is better, and this repository is just for my research and study.    
+
+Additionally, for faster or more efficient training, I added some codes from:    
 - 🤗 `accelerate`    
 - ✍🏻️ `wandb` [![wandb](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg)](https://wandb.ai/wako/DDPM_easy_ver?nw=nwuserwako)    
 
