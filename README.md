@@ -32,7 +32,8 @@ CUDA_VISIBLE_DEVICES=2 accelerate launch train.py --dataset_name 'Fashion' --try
 ``` 
 - Datasets: `CIFAR10`, `MNIST`, `FashionMNIST`
 
-## Inference (Generate IMG or GIF)
+## Inference 
+Generate IMG and GIF.
 ```bash
 CUDA_VISIBLE_DEVICES=2 python inference.py --save_file_name 'fashion_t_01' --seed 2024 --h_num 2 --w_num 2 --saved_epoch 504            
 ``` 
