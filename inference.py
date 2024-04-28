@@ -3,6 +3,7 @@
 import gc
 import os
 import math
+import random
 import argparse
 import numpy as np
 from tqdm.auto import tqdm
@@ -24,6 +25,7 @@ from dataset import *
 from modules import *
 from ddpm import *
 from trainer import *
+
 
 
 # ========================== generate ============================== #
@@ -97,9 +99,11 @@ def gen_img_gif(model,
     print("GIF SAVED")
     
     # Save IMG
-    plt.imshow(final_gen, cmap = 'gray')
-    final_gen.save(save_output_path + f"{save_file_name}.jpeg")
+    plt.imshow(final_gen[-1], cmap = 'gray')
+    img = Image.fromarray(final_gen[-1])
+    img.save(save_output_path + f"{save_file_name}.jpeg")
     print("IMG SAVED")
+    
     
 # ========================== config = define() ============================== #
 
@@ -110,7 +114,7 @@ def define():
     p.add_argument('--seed', type = int, default = 2024, help="Seed")
     
     # Dataset
-    p.add_argument('--dataset_name', type = str, default = "Fahsion", help="dataset name")
+    p.add_argument('--dataset_name', type = str, default = "Fashion", help="dataset name")
     
     # File Name when Saved
     p.add_argument('--save_file_name', type = str, default = "1st_try", help="save file name")
@@ -130,7 +134,10 @@ def define():
     config = p.parse_args()
     return config
 
-
+# Infer CLI Code (Example: FashionMNIST)
+# CUDA_VISIBLE_DEVICES=2 python inference.py --save_file_name 'fashion_t_01' --seed 2024 --h_num 2 --w_num 2 --saved_epoch 504
+# CUDA_VISIBLE_DEVICES=2,3 python inference.py --save_file_name 'fashion_t_01' --seed 2024 --h_num 2 --w_num 2 --saved_epoch 504
+# /home/heiscold/ddpm_e/ckpts/fashion/ddpm_ep_504.bin
 
 # ========================== main() ============================== #
 
@@ -151,7 +158,8 @@ def main(config):
         img_depth= 3
         
     # Random Seed
-    set_seed(seed=config.seed) # 2024
+    seed_num = random.randrange(1, config.seed + 100)
+    set_seed(seed= seed_num) 
     
     # Device
     if config.device == 'cuda':
