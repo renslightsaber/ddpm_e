@@ -15,10 +15,10 @@ Theses codes are much simpler, and you could train DDPM on Colab GPU. I recommen
  
 
 ## Generated (will be updated soon.)
- <img src="/assets/KakaoTalk_Photo_2024-04-28-16-21-52.gif" width="15%"></img>
- <img src="/assets/KakaoTalk_Photo_2024-04-28-16-22-04.gif" width="15%"></img>
- <img src="/assets/fashion_t_01.gif" width="15%"></img>
- <img src="/assets/fashion_t_04.gif" width="15%"></img>
+ <img src="/assets/imageedit_1_4023098460.gif" width="15%"></img>
+ <img src="/assets/imageedit_3_3572262928.gif" width="15%"></img>
+ <img src="/assets/imageedit_5_8576558897.gif" width="15%"></img>
+ <img src="/assets/imageedit_7_9457065804.gif" width="15%"></img>
 
 ## How to train `DDPM`?
 ### [wandb login in CLI interface](https://docs.wandb.ai/ref/cli/wandb-login)
