@@ -60,7 +60,7 @@ def gen_img_gif(model,
 
     # Generate samples from denoising process
     gen_samples = []
-    x = torch.randn((sample_batch_size, 1, 32, 32)).to(device)
+    x = torch.randn((sample_batch_size, img_depth, in_size, in_size)).to(device)
     sample_steps = torch.arange(t_range-1, 0, -1).to(device)
     for t in sample_steps:
         x = denoise_sample(model, x, t, device)
