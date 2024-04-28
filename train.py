@@ -5,6 +5,8 @@ import os
 import math
 import argparse
 import numpy as np
+
+from PIL import Image
 from tqdm.auto import tqdm
 import matplotlib.pyplot as plt
 
@@ -57,7 +59,7 @@ def define():
     return config
 
 # wandb log-in
-# wandb login --relogin '<wandb-api-token-key>'
+# wandb login --relogin '<your-wandb-api-token>'
 
 # Train CLI Code (Example: FashionMNIST)
 # CUDA_VISIBLE_DEVICES=2 accelerate launch train.py --try_name 't_01' --seed 2024 --n_epochs 2000 --batch_size 128 --lr 2e-4 --print_iter 50
