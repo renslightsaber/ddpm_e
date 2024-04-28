@@ -3,6 +3,8 @@ This repository is [`DDPM` (Denoising Diffusion Probabilistic Models)](https://a
 - 🤗 `accelerate`    
 - ✍🏻️ `wandb` [![wandb](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg)](https://wandb.ai/wako/DDPM_easy_ver?nw=nwuserwako)    
 
+뭐 이 정도면 되것지...?
+
 ## Colab ipynb urls for more explanation:
 Theses codes are much simpler, and you could train DDPM on Colab GPU. I recommend L4 or A100.
 - **DDPM_pytorch_CIFAR10_full_explanation.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NLtYY-5Pk5OQbqZeqA_SEXJoyezqCRbO?usp=sharing)     
