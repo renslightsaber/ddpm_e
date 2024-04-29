@@ -8,7 +8,7 @@ Additionally, for faster or more efficient training, I added some codes from:
 뭐 이 정도면 되것지...?
 
 ## Colab ipynb urls for more explanation:
-Theses codes are much simpler, and you could train DDPM on Colab GPU. I recommend L4 or A100.
+Theses codes are much simpler, and you could train DDPM on Colab GPU (recommend: `L4`, `A100`)
 - **DDPM_pytorch_CIFAR10_full_explanation.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NLtYY-5Pk5OQbqZeqA_SEXJoyezqCRbO?usp=sharing)     
 - **DDPM_pytorch_CIFAR10.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15VBHrctoAcbDJ36QtAYVF7Tlzee58DvQ?usp=sharing)           
 - **DDPM_pytorch_MNIST.ipynb** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13dfCL1WuEBVOo5dFFzrNuu900NtKDQdS?usp=sharing)     
@@ -16,13 +16,13 @@ Theses codes are much simpler, and you could train DDPM on Colab GPU. I recommen
 
 ## Generated 
 You can check these samples at [`assets`](https://github.com/renslightsaber/ddpm_e/tree/main/assets).
-### MNIST, FashionMNIST
+### MNIST, FashionMNIST (`batch_size`: 128, `n_epochs`: 500, 600)
  <img src="/assets/imageedit_1_4023098460.gif" width="15%"></img>
  <img src="/assets/imageedit_3_3572262928.gif" width="15%"></img>
  <img src="/assets/imageedit_5_8576558897.gif" width="15%"></img>
  <img src="/assets/imageedit_7_9457065804.gif" width="15%"></img>
  
-### CIFAR10
+### CIFAR10 (`batch_size`: 128, `n_epochs`: 2040)
  <img src="/assets/imageedit_1_4283001522.gif" width="15%"></img>
  <img src="/assets/imageedit_3_8219252803.gif" width="15%"></img>
  <img src="/assets/imageedit_5_2391450170.gif" width="15%"></img>
